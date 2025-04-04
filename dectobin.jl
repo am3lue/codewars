@@ -39,7 +39,7 @@ while true
     elseif choice == 2
         println("Enter the number")
         number = parse(Int,readline())
-        println("The number in octal is:","\033]92m",dectooct(number),"\033]0m")
+        println("The number in octal is:","\033]92m",dectooct(number),"\033]0m") #for the color
 
     else
         println("Still Under Construction")
