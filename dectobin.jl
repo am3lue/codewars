@@ -8,16 +8,15 @@ function dectobin(number::Int )
     return join(reverse!(value), " ")
 end
 
-function dectooct(number::Int )
+function dectooct(number::Int)
     value = []
     while number > 0
-        push!(value,number % 8)
-        number = div(number,8)
+        push!(value, number % 8)
+        number = div(number, 8)
     end
 
     return join(reverse!(value), " ")
 end
-
 println("""
 Please Enter what you wanna do:
 1. Decimal to Binary
@@ -34,12 +33,12 @@ while true
     if choice == 1
         println("Enter the number")
         number = parse(Int,readline())
-        println("the number in Binary is: ","\033]92m",dectobin(number),"\033]0m")
+        println("the number in Binary is: ",dectobin(number))
 
     elseif choice == 2
         println("Enter the number")
         number = parse(Int,readline())
-        println("The number in octal is:","\033]92m",dectooct(number),"\033]0m") #for the color
+        println("The number in octal is:",dectooct(number)) #for the color
 
     else
         println("Still Under Construction")
