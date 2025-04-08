@@ -92,18 +92,19 @@ function hextodec(hex::String)
     return decimal
 end
 
-println("""
-Please Enter what you wanna do:
-1. Decimal to Binary
-2. Decimal to Octal
-3. Decimal to Hexadecimal
-4. Binary to Decimal
-5. Octal to Decimal
-6. Hexadecimal to Decimal
-7. Exit
-""")
+
 
 while true
+        println("""
+    Please Enter what you wanna do:
+    1. Decimal to Binary
+    2. Decimal to Octal
+    3. Decimal to Hexadecimal
+    4. Binary to Decimal
+    5. Octal to Decimal
+    6. Hexadecimal to Decimal
+    7. Exit
+    """)
     choice = parse(Int,readline())
     if choice == 1
         println("Enter the number")
